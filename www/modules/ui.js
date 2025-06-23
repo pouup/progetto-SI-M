@@ -1,5 +1,5 @@
-import { getAllEncryptedMessages, getAllShares } from "/modules/storage.js";
-import { reconstructSecret } from "/modules/crypto.js";
+import { getAllEncryptedMessages, getAllShares } from "./storage.js";
+import { reconstructSecret } from "./crypto.js";
 
 export async function renderMessageList() {
   if (document.readyState === "loading") {

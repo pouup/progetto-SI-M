@@ -1,6 +1,6 @@
-import { setupQrScanner } from "/modules/qrscanner.js";
-import { renderMessageList } from "/modules/ui.js";
-import { openDB } from "/modules/storage.js";
+import { setupQrScanner } from "./modules/qrscanner.js";
+import { renderMessageList } from "./modules/ui.js";
+import { openDB } from "./modules/storage.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   setupQrScanner();

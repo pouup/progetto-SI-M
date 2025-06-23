@@ -2,9 +2,9 @@ import {
   saveEncryptedMessage,
   saveShare,
   getEncryptedMessage,
-} from "/modules/storage.js";
-import { renderMessageList } from "/modules/ui.js";
-import { verifyEd25519Signature } from "/modules/crypto.js";
+} from "./storage.js";
+import { renderMessageList } from "./ui.js";
+import { verifyEd25519Signature } from "./crypto.js";
 
 let stream = null;
 let scanning = false;
