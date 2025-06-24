@@ -1,6 +1,8 @@
 # Prova Pratica – Esame di Sicurezza dell’Informazione M
 
-Questo progetto rappresenta la prova pratica per l’esame di **Sicurezza dell’Informazione**. L’obiettivo è realizzare un sistema sicuro per la condivisione e la raccolta di messaggi cifrati, sfruttando tecniche di crittografia moderna e la suddivisione di un segreto tramite lo Shamir’s Secret Sharing ([notebook demo](./sss.ipynb)).
+Questo progetto rappresenta la prova pratica per l’esame di **Sicurezza dell’Informazione**. L’obiettivo è realizzare un sistema sicuro per la condivisione e la raccolta di messaggi cifrati, sfruttando tecniche di crittografia moderna e la suddivisione di un segreto tramite lo Shamir’s Secret Sharing.
+
+Una demo del progetto è disponibile su [GitHub Pages](https://pouup.github.io/progetto-SI-M/) (è consigliato l'uso di uno smartphone).
 
 ## Idea e Funzionamento
 
@@ -24,6 +26,7 @@ Questo progetto rappresenta la prova pratica per l’esame di **Sicurezza dell�
 - **qrgen.py**: Script Python per generare il messaggio cifrato, suddividere la chiave e creare i QR code.
 - **www/**: Interfaccia web per la raccolta dei QR code, la verifica delle firme e la ricostruzione del messaggio.
 - **sss.ipynb**: Notebook Jupyter che dimostra lo Shamir’s Secret Sharing.
+- **testdata/**: Cartella contenente i QR code generati per il messaggio cifrato e le quote.
 
 ## Requisiti
 
