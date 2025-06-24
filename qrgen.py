@@ -138,7 +138,11 @@ if __name__ == "__main__":
 
     message = input("Enter the message to encrypt: ")
 
-    secret = secrets.token_bytes(32)  # 256-bit secret for AES-GCM
+    secret = None
+    while secret is None:
+        secret = secrets.token_bytes(32)  # 256-bit secret for AES-GCM
+        if int.from_bytes(secret,"big") >= PRIME:
+            secret = None
     nonce = secrets.token_bytes(12)  # 96-bit nonce for AES-GCM
     ciphertext = AESGCM(secret).encrypt(nonce, message.encode(), None)
 
